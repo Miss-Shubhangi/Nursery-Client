@@ -3,6 +3,7 @@ import ReactDom from "react-dom/client"
 import { RouterProvider , createBrowserRouter } from "react-router-dom"
 import Home from "./Views/Home/Home"
 
+
 const root =ReactDom.createRoot(document.getElementById("root"))   
 
 const router = createBrowserRouter([
@@ -16,4 +17,5 @@ const router = createBrowserRouter([
     }
 ])
 
-root.render(<RouterProvider router={router}/>)
+root.render(<div><RouterProvider router={router}/>
+</div>)
