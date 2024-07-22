@@ -1,12 +1,13 @@
 .plant-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ddd;
+    border: 1px solid green;
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    margin: 15px 10px;
   }
   
   .plant-card:hover {
@@ -16,7 +17,7 @@
   .plant-image {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    border-bottom:2px solid green;
   }
   
   .plant-details {
@@ -26,6 +27,7 @@
   .plant-name {
     font-size: 1.5em;
     margin: 0;
+    font-family:'Times New Roman', Times, serif;
   }
   
   .plant-category,
@@ -49,12 +51,12 @@
   }
   
   .edit-button {
-    background-color: #4CAF50;
+    background-color:#ffa31a;
     color: white;
   }
   
   .edit-button:hover {
-    background-color: #45a049;
+    background-color: #ff9900;
   }
   
   .delete-button {
@@ -73,12 +75,14 @@
   
     .plant-image {
       width: 200px;
-      height: auto;
+      height: 200px;
+      border-right: 2px solid green;
+      border-bottom: none;
     }
   
     .plant-details {
       flex: 1;
-      padding: 16px 24px;
+      padding: 20px 28px;
     }
   }
   

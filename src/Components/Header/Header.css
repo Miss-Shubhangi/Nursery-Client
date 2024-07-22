@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* For Nursery Name */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap'); /* For Tagline */
+
+.header-container {
+  background-color: #4CAF50; 
+  padding: 20px;
+  text-align: center;
+  color: white;
+ 
+}
+
+.nursery-name {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.tagline {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 15px;
+  }
+
+  .nursery-name {
+    font-size: 2em;
+  }
+
+  .tagline {
+    font-size: 1em;
+  }
+}
