@@ -1,0 +1,19 @@
+.add-plant-button {
+    background-color:#33adff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position:fixed;
+    right: 10px;
+    z-index: 10;
+    margin: 10px 20px;
+  }
+  
+  .add-plant-button:hover {
+    background-color:#1aa3ff;
+  }
+  

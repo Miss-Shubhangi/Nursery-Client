@@ -5,12 +5,13 @@ import Plantcard from '../../Components/Plantcard/Plantcard'
 import "./Home.css"
 import Header from '../../Components/Header/Header'
 import toast , { Toaster } from "react-hot-toast"
+import { Link } from 'react-router-dom'
 function Home() {
   const [plants , setPlants]=useState([])
 
   const loadPlants=async ()=>{
     toast.loading("Loading Plants....")
-      const response=await axios.get(`${process.env.REACT_APP_API_URL}/plants`)
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/plants`);
     toast.dismiss()
       toast.success("Plants loaded successfully")
       setPlants(response.data.data)
@@ -20,7 +21,12 @@ function Home() {
   },[])
   return (
     <div>
-     <Header/>   
+     <Header/> 
+     <Link to="/addplant" className="add-plant-section">
+        <button className="add-plant-button" >
+         New Plant
+        </button>
+      </Link>  
     {
       plants.map((plant,i)=>{
         const {_id ,
