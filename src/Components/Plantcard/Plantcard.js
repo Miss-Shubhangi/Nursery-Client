@@ -4,13 +4,12 @@ import axios from 'axios';
 import toast, { Toaster } from "react-hot-toast";
 import { Link } from 'react-router-dom';
 
-const Plantcard = ({ _id,image, name, category, price, description, onEdit, loadPlants }) => {
-const deleteplant=async(plantId)=>{
-   const response =await axios.delete(`${process.env.REACT_APP_API_URL}/plant/${plantId}`)
-
-   toast.success(response.data.message)
-   loadPlants()
-}
+const Plantcard = ({ _id, image, name, category, price, description, onEdit, loadPlants }) => {
+  const deleteplant = async (plantId) => {
+    const response = await axios.delete(`${process.env.REACT_APP_API_URL}/plant/${plantId}`);
+    toast.success(response.data.message);
+    loadPlants();
+  };
 
   return (
     <div className="plant-card">
@@ -21,13 +20,11 @@ const deleteplant=async(plantId)=>{
         <p className="plant-price">₹ {price} /-</p>
         <p className="plant-description">{description}</p>
         <div className="plant-actions">
-          <Link to={`/editplant/${_id}`} type='button' className="edit-button" onClick={onEdit}>Edit</Link>
-          <button type='button'className="delete-button" onClick={()=>{
-            deleteplant(_id)
-          }}>Delete</button>
+          <div><Link to={`/editplant/${_id}`} className="edit-button" onClick={onEdit}>Edit</Link></div>
+          <button className="delete-button" onClick={() => { deleteplant(_id); }}>Delete</button>
         </div>
       </div>
-      <Toaster/>
+      <Toaster />
     </div>
   );
 };
