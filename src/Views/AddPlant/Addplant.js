@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from 'react';
+import { Link } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import "./Addplant.css";
 import axios from "axios";
@@ -14,7 +15,7 @@ const Addplant = () => {
     const PlantAdd = async () => {
         toast.loading("Adding plant ....");
         
-        if(!name || !category || !price || !image || !description) {
+        if (!name || !category || !price || !image || !description) {
             toast.error("Please enter all details");
             return;
         }
@@ -33,9 +34,9 @@ const Addplant = () => {
             setPrice('');
             setImage('');
             setDescription('');
-        } 
-           
-    
+      
+        
+    } 
 
     return (
         <div>
@@ -80,6 +81,9 @@ const Addplant = () => {
                     />
                 </div>
                 <div className="form-group">
+                    <img src={image} className="img-preview" alt="Preview" />
+                </div>
+                <div className="form-group">
                     <label>Description</label>
                     <textarea
                         value={description}
@@ -89,6 +93,13 @@ const Addplant = () => {
                 </div>
                 <button type="button" onClick={PlantAdd} className="add-button">Add Plant</button>
             </form>
+
+            <br/>
+
+            <Link to="/">
+                <button className="all-plants-button">All Plants</button>
+            </Link>
+            
             <Toaster />
         </div>
     );
