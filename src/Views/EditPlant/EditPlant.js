@@ -47,7 +47,7 @@ function EditPlant() {
 
     return (
         <div>
-            <form className="add-plant-form">
+            <form className="edit-plant-form">
                 <h2>Update Plant</h2>
                 
                 <div className="form-group">
@@ -98,7 +98,7 @@ function EditPlant() {
                         required
                     ></textarea>
                 </div>
-                <button type="button" onClick={updatePlant} className="add-button">Update Plant</button>
+                <button type="button" onClick={updatePlant} className="edit-button">Update Plant</button>
             </form>
 
             <br/>

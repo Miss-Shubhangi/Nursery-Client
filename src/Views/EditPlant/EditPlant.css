@@ -1,4 +1,4 @@
-.add-plant-form {
+.edit-plant-form {
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
@@ -8,7 +8,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .add-plant-form h2 {
+  .edit-plant-form h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #ffa31a;
@@ -33,7 +33,7 @@
     border-radius: 4px;
   }
   
-  .add-button {
+  .edit-button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -45,7 +45,7 @@
     transition: background-color 0.3s ease;
   }
   
-  .add-button:hover {
+  .edit-button:hover {
     background-color:#fc9c0d;
   }
   .img-preview{
