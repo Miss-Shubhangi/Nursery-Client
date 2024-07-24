@@ -17,12 +17,14 @@
   .form-group {
     margin-bottom: 15px;
   }
-  
+  .label{
+    color: green;
+  }
   .form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: green;
+    
   }
   
   .form-group input,

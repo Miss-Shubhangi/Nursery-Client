@@ -44,7 +44,7 @@ const Addplant = () => {
                 <h2>Add New Plant</h2>
                 
                 <div className="form-group">
-                    <label>Name</label>
+                    <label className="label">Name</label>
                     <input
                         type="text"
                         value={name}
@@ -53,7 +53,7 @@ const Addplant = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label>Category</label>
+                    <label className="label">Category</label>
                     <input
                         type="text"
                         value={category}
@@ -62,7 +62,7 @@ const Addplant = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label>Price</label>
+                    <label className="label">Price</label>
                     <input
                         type="text"
                         value={price}
@@ -72,7 +72,7 @@ const Addplant = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label>Image URL</label>
+                    <label className="label">Image URL</label>
                     <input
                         type="text"
                         value={image}
@@ -84,7 +84,7 @@ const Addplant = () => {
                     <img src={image} className="img-preview" alt="Preview" />
                 </div>
                 <div className="form-group">
-                    <label>Description</label>
+                    <label className="label">Description</label>
                     <textarea
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
