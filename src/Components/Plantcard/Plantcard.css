@@ -55,6 +55,7 @@
   .edit-button {
     background-color:#ffa31a;
     color: white;
+    text-decoration: none;
   }
   
   .edit-button:hover {
